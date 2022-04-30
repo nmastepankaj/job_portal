@@ -1,0 +1,25 @@
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = 'venv'
+force-exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+| ./*/migrations
+'''
+
+[tool.isort]
+profile="black"
+atomic=true
+extend_skip_glob="*/migrations/*.py"
+line_length=88
