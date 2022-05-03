@@ -3,3 +3,12 @@
 .favorite {
     color: #ff7473 !important;
 }
+
+.logo{
+    height: 4rem;
+    width: 4rem;
+}
+
+.navbar{
+    min-height: 4rem;
+}
